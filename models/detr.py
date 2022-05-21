@@ -326,7 +326,7 @@ def build(args):
     # 如coco数据集，它的类别有90个，所以num_classes=91，如果自定义数据集
     # 的最大类别数为1，那么num_classes=2，具体可以参考
     # https://github.com/facebookresearch/detr/issues/108#issuecomment-650269223
-    num_classes = 20 if args.dataset_file != 'coco' else 91
+    num_classes = 20 if args.dataset_file != 'coco' else 2
     if args.dataset_file == "coco_panoptic":
         # for panoptic, we just add a num_classes that is large enough to hold
         # max_obj_id + 1, but the exact value doesn't really matter
