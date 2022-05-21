@@ -57,8 +57,8 @@ def addImgItem(file_name, size):
     # image_item = dict()    #按照一定的顺序，这里采用collections.OrderedDict()
     image_item = collections.OrderedDict()
     # 使用原始的文件名
-    # jpg_name = os.path.splitext(file_name)[0] + '.bmp'
-    jpg_name = file_name
+    jpg_name = os.path.splitext(file_name)[0] + '.jpg'
+    # jpg_name = file_name
     image_item['file_name'] = jpg_name
     image_item['width'] = size['width']
     image_item['height'] = size['height']
