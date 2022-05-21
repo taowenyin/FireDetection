@@ -103,7 +103,6 @@ def addAnnoItem(object_name, image_id, category_id, bbox):
     annotation_item['bbox'] = bbox
     annotation_item['category_id'] = category_id
     annotation_item['id'] = annotation_id
-    annotation_item['ignore'] = 0
     annotation_id += 1
     coco['annotations'].append(annotation_item)
 
